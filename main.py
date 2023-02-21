@@ -51,8 +51,8 @@ if __name__ == "__main__":
     name.greeting()
     try:
         p_number = int(
-            input('¿Cuantas noticias deseas investigar? (max. 50): '))
-        if p_number > 50 or p_number < 0:
+            input('¿Cuantas noticias deseas investigar? (max. 100): '))
+        if p_number >100 or p_number < 0:
             raise ValueError(
                 'Por favor inserte un número de página valido (valor entero)')
         output = int(input(
@@ -61,7 +61,7 @@ if __name__ == "__main__":
             raise ValueError(
                 'Por favor inserte un número de opción valido (1 o 2)')
 
-        elcomercio = ElComercio('https://elcomercio.pe/noticias/coronavirus/',
+        elcomercio = ElComercio('https://elcomercio.pe/noticias/politica/',
                                 p_number)
 
         elcomercio.export(output)

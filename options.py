@@ -19,7 +19,7 @@ class UserOptions:
         """ Saludo inicial """
         print(' *'*29)
         print(
-            f'Bienvenid@ {self.name.title()} a las noticias sobre el COVID-19'.center(60))
+            f'Bienvenid@ {self.name.title()} a las noticias sobre Politica'.center(60))
         print(' *'*29)
         print('Haré un archivo .csv para ti con la información más importante')
 
